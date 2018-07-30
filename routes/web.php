@@ -23,6 +23,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('pm/{palavra}','StringsController@paraMaiusculo');
+
+
 //oi mundo
 
 //afasdfds

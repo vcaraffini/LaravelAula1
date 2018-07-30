@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 
 class StringsController extends Controller
 {
-    //teste
+    public function paraMaiusculo($original){
+    	$modificada = strtoupper($original);
+    	return view ("exibirMaiusculo",["original"=> $original, "modificada" =>  $modificada]);
+    	    }
     //teste
 }
